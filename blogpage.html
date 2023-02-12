@@ -4,10 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $( function() {
+          $( "#tabs" ).tabs({
+            event: "mouseover"
+          });
+        } );
+        </script>
+    <script src="script.js" defer></script>
+    <style>
+        button {
+            background-color: rgb(232, 121, 9);
+            padding: 15px;
+            border-radius: 10%;
+            border: 1px solid black;  
+        }
+        button:hover {
+            opacity: .8;
+            transition: 500ms;
+        }
+        button:active {
+            position: relative;
+            top: 5px;
+        }
+        .button {
+            display: flex;
+            justify-content: center;
+        }
+        div {
+            width: 30%;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+        #tabs-1, #tabs-2, #tabs-3 {
+            min-width: 95%;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -24,14 +61,25 @@
             <li><a href="#">Blog</a></li>
         </ul>
     </nav>
-    <div class="container">
-        <div class="left-container">
-            <button id="btn">Request</button>
+    <section class="button">
+        <button id="btn">Request articles</button>
+    </section>
+    <div id="tabs">
+        <ul style="margin-left: 40px;">
+          <li><a class="link1" href="#tabs-1"></a></li>
+          <li><a class="link2" href="#tabs-2"></a></li>
+          <li><a class="link3" href="#tabs-3"></a></li>
+        </ul>
+        <div id="tabs-1">
+          <p class="tab1">MY FREN, CLICK THE BUTTON!</p>
         </div>
-        <div class="right-container">
-           
+        <div id="tabs-2">
+          <p class="tab2"></p>
         </div>
-    </div>
+        <div id="tabs-3">
+          <p class="tab3"></p>
+        </div>
+      </div>
     <footer>
         <p><strong>&#169; Copyright 2021 Muziekschool H&J</strong></p>
         <p><strong>(Dit is een oefenopdracht, alle informatie op deze website is fictief.)</strong></p>
