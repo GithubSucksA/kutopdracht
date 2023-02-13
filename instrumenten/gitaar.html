@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <link rel="stylesheet" type="text/css" href="../styles.css"/>
+    <style>
+        .contain {
+            padding: 60px;
+        }
+        .wholecontain {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            background: #0F2027;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);
+            background: linear-gradient(to left, #2C5364, #203A43, #0F2027);
+        }
+        .contain-right {
+            padding-top: 75px;
+        }
+        audio {
+            margin-bottom: 50px;
+        }
+        h2 {
+            color: whitesmoke;
+        }
+        @media screen and (max-width: 1150px) {
+            .wholecontain {
+                display: flex;
+                flex-direction: column;
+            }
+            .contain-right {
+                padding-left: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Muziekschool H&J</h1>
+        <p>Luisterend oor voor talent!</p>
+    </header>
+    <nav>
+        <ul class="navbar">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../overons.html">Over ons</a></li>
+            <li><a href="../tarieven.html">Tarieven</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+            <li><a href="https://ianpjotr30.pythonanywhere.com">Agenda</a></li>
+            <li><a href="../blogpage.html">Blog</a></li>
+            <li><a href="../beheer.html">Beheer</a></li>
+            <li><a href="https://githubsucksa.github.io/mijnapp/">Motivatie</a></li>
+        </ul>
+    </nav>
+    <div class="wholecontain">
+        <div class="contain">
+            <div class="fotorama">
+                <img src="https://www.aimm.edu/hs-fs/hubfs/Blog%20Images/How%20to%20Become%20a%20Better%20Guitar%20Player/how%20long%20does%20it%20take%20to%20become%20a%20good%20guitar%20player.jpg?width=800&name=how%20long%20does%20it%20take%20to%20become%20a%20good%20guitar%20player.jpg"/>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3sR8gE-OdCcrnC3mWGpfCzz7VKhF0n8B__Q&usqp=CAU"/>
+                <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/the-guitar-player-mal-bray.jpg"/>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQMquPMZLxHcJO1iZ2iFDcXgsu8l_3Tlz6Eg&usqp=CAU"/>
+            </div>
+        </div>
+        <div class="contain-right">
+            <h2>Uptempo 115 BPM</h2>
+            <audio src="../audio/guitar.wav" controls></audio>
+            <h2>Greek street player</h2>
+            <audio src="../audio/guitar2.wav" controls></audio>
+            <h2>Standard chord</h2>
+            <audio src="../audio/guitar3.wav" controls></audio>
+            <h2>Jesse playing the guitar</h2>
+            <audio src="../audio/guitar4.wav" controls></audio>
+        </div>
+    </div>
+    <footer>
+        <p><strong>&#169; Copyright 2021 Muziekschool H&J</strong></p>
+        <p><strong>(Dit is een oefenopdracht, alle informatie op deze website is fictief.)</strong></p>
+    </footer>
+</body>
+</html>

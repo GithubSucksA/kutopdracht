@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Muziekschool H&J</h1>
+        <p>Luisterend oor voor talent!</p>
+    </header>
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="overons.html">Over ons</a></li>
+            <li><a href="tarieven.html">Tarieven</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="https://ianpjotr30.pythonanywhere.com">Agenda</a></li>
+            <li><a href="blogpage.html">Blog</a></li>
+            <li><a href="#">Beheer</a></li>
+            <li><a href="https://githubsucksa.github.io/mijnapp/">Motivatie</a></li>
+        </ul>
+    </nav>
+    <form action="x" method="POST">
+        <label for="title">Blog titel</label>
+        <input id="title" name="title" type="text" placeholder="Blog titel" required/>
+        <label for="description">Omschrijving</label>
+        <textarea id="description" name="description" rows="4" cols="50" placeholder="Beschrijving van blog" required></textarea>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Perhaps try 'Pietje'"/>
+        <input id="send" type="submit" value="Add blog">
+    </form>
+    <footer>
+        <p><strong>&#169; Copyright 2021 Muziekschool H&J</strong></p>
+        <p><strong>(Dit is een oefenopdracht, alle informatie op deze website is fictief.)</strong></p>
+    </footer>
+    <script>
+        let passInput = document.querySelector('#password');
+        document.querySelector('#send').addEventListener('click', (event) =>{
+            if (passInput.value == 'Pietje') {
+                alert('Form validated!')
+            }
+            else alert('Wrong password, should you even be here!?')
+        })
+    </script>
+</body>
+</html>

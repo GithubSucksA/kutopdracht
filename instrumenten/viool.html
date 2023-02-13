@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <link rel="stylesheet" type="text/css" href="../styles.css"/>
+    <style>
+        .contain {
+            padding: 30px;
+        }
+        .wholecontain {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            background: #0F2027;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);
+            background: linear-gradient(to left, #2C5364, #203A43, #0F2027);
+        }
+        .contain-right {
+            padding-top: 75px;
+        }
+        audio {
+            margin-bottom: 50px;
+        }
+        h2 {
+            color: whitesmoke;
+        }
+        @media screen and (max-width: 1150px) {
+            .wholecontain {
+                display: flex;
+                flex-direction: column;
+            }
+            .contain-right {
+                padding-left: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Muziekschool H&J</h1>
+        <p>Luisterend oor voor talent!</p>
+    </header>
+    <nav>
+        <ul class="navbar">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../overons.html">Over ons</a></li>
+            <li><a href="../tarieven.html">Tarieven</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+            <li><a href="https://ianpjotr30.pythonanywhere.com">Agenda</a></li>
+            <li><a href="../blogpage.html">Blog</a></li>
+            <li><a href="../beheer.html">Beheer</a></li>
+            <li><a href="https://githubsucksa.github.io/mijnapp/">Motivatie</a></li>
+        </ul>
+    </nav>
+    <div class="wholecontain">
+        <div class="contain">
+            <div class="fotorama">
+            <img src="https://images.unsplash.com/photo-1612225330812-01a9c6b355ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dmlvbGlufGVufDB8fDB8fA%3D%3D&w=1000&q=80"/>
+            <img src="data:image/jpeg;base64,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">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Tenorviolin.jpg/800px-Tenorviolin.jpg">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfF12fz20JY1D4qBT5a6R2r5gNHmzpOljGKg&usqp=CAU"/>
+            </div>
+        </div>
+        <div class="contain-right">
+            <h2>The streets of Cairo</h2>
+            <audio src="../audio/violinaudio.wav" controls></audio>
+            <h2>Violin tuning exercise</h2>
+            <audio src="../audio/violinaudio2.wav" controls></audio>
+            <h2>D-string</h2>
+            <audio src="../audio/violinaudio3.wav" controls></audio>
+            <h2>Another D-string</h2>
+            <audio src="../audio/violinaudio4.mp3" controls></audio>
+        </div>
+    </div>
+    <footer>
+        <p><strong>&#169; Copyright 2021 Muziekschool H&J</strong></p>
+        <p><strong>(Dit is een oefenopdracht, alle informatie op deze website is fictief.)</strong></p>
+    </footer>
+</body>
+</html>

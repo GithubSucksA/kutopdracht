@@ -21,9 +21,31 @@ $(document).ready(function() {
                 console.log(`Error ${error}`);
             }
         })
+        $('h2').animate({
+            'background-color': 'rgb(24, 27, 171)',
+            'color': 'red',
+            'font-size': '25px',
+            'opacity': '1',
+            'padding': '10px'
+        }, 5000)
     })
 
     $('body').on('click', 'h3', function(e){
         console.log(e);
+        if (e.target.innerText == 'Viool') {
+            $('a')[0].click();
+        }
+        else if ((e.target.innerText == 'Mondharmonica')) {
+            $('a')[1].click();
+        }
+        else if ((e.target.innerText == 'Harp')) {
+            $('a')[2].click();
+        }
+        else if ((e.target.innerText == 'Saxofoon')) {
+            $('a')[3].click();
+        }
+        else if ((e.target.innerText == 'Gitaar')) {
+            $('a')[4].click();
+        }
     })
 });

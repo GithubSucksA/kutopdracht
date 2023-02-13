@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <link rel="stylesheet" type="text/css" href="../styles.css"/>
+    <style>
+        .wholecontain {padding-left: 120px;}
+        .contain {
+            padding: 30px;
+        }
+        .wholecontain {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            background: #0F2027;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);
+            background: linear-gradient(to left, #2C5364, #203A43, #0F2027);
+        }
+        .contain-right {
+            padding-top: 75px;
+        }
+        audio {
+            margin-bottom: 50px;
+        }
+        h2 {
+            color: whitesmoke;
+        }
+        @media screen and (max-width: 1150px) {
+            .wholecontain {
+                display: flex;
+                flex-direction: column;
+            }
+            .contain-right {
+                padding-left: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Muziekschool H&J</h1>
+        <p>Luisterend oor voor talent!</p>
+    </header>
+    <nav>
+        <ul class="navbar">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../overons.html">Over ons</a></li>
+            <li><a href="../tarieven.html">Tarieven</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+            <li><a href="https://ianpjotr30.pythonanywhere.com">Agenda</a></li>
+            <li><a href="../blogpage.html">Blog</a></li>
+            <li><a href="../beheer.html">Beheer</a></li>
+            <li><a href="https://githubsucksa.github.io/mijnapp/">Motivatie</a></li>
+        </ul>
+    </nav>
+    <div class="wholecontain">
+        <div class="contain">
+            <div class="fotorama">
+            <img src="https://ibizamusicagency.com/img/asset/bWFpbi9hY3RzL2FubmEtaGFycC9iYW5uZXIvc2NyZWVuLXNob3QtMjAxNi0wOC0wMi1hdC0xMjQyNDYucG5n?w=600&h=600&q=80&fit=crop&s=0be9d2e28118d4c2ea53f1f0394c1c92"/>
+            <img src="https://www.ahk.nl/media/cva/_processed_/1/d/csm_harp_f7647e2486.jpg">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTETvP7iTFc5FhnypZEo8QR6wXz8OIHpzXYfA&usqp=CAU">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6YbVysWnQ1vl-YcpTS8NRPZl5lewIFDpLzQ&usqp=CAU"/>
+            </div>
+        </div>
+        <div class="contain-right">
+            <h2>Harp chord</h2>
+            <audio src="../audio/harp.ogg" controls></audio>
+            <h2>Medieval Harp</h2>
+            <audio src="../audio/harp2.wav" controls></audio>
+            <h2>Asian Harp</h2>
+            <audio src="../audio/harp3.wav" controls></audio>
+            <h2>Futuristic Harp</h2>
+            <audio src="../audio/harp4.wav" controls></audio>
+        </div>
+    </div>
+    <footer>
+        <p><strong>&#169; Copyright 2021 Muziekschool H&J</strong></p>
+        <p><strong>(Dit is een oefenopdracht, alle informatie op deze website is fictief.)</strong></p>
+    </footer>
+</body>
+</html>

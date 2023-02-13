@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <link rel="stylesheet" type="text/css" href="../styles.css"/>
+    <style>
+        .wholecontain {padding-left: 50px;}
+        .contain {
+            padding: 30px;
+        }
+        .wholecontain {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            background: #0F2027;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);
+            background: linear-gradient(to left, #2C5364, #203A43, #0F2027);
+        }
+        .contain-right {
+            padding-top: 75px;
+        }
+        audio {
+            margin-bottom: 50px;
+        }
+        h2 {
+            color: whitesmoke;
+        }
+        @media screen and (max-width: 1150px) {
+            .wholecontain {
+                display: flex;
+                flex-direction: column;
+            }
+            .contain-right {
+                padding-left: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Muziekschool H&J</h1>
+        <p>Luisterend oor voor talent!</p>
+    </header>
+    <nav>
+        <ul class="navbar">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../overons.html">Over ons</a></li>
+            <li><a href="../tarieven.html">Tarieven</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+            <li><a href="https://ianpjotr30.pythonanywhere.com">Agenda</a></li>
+            <li><a href="../blogpage.html">Blog</a></li>
+            <li><a href="../beheer.html">Beheer</a></li>
+            <li><a href="https://githubsucksa.github.io/mijnapp/">Motivatie</a></li>
+        </ul>
+    </nav>
+    <div class="wholecontain">
+        <div class="contain">
+            <div class="fotorama">
+            <img src="https://homestudiomagic.b-cdn.net/wp-content/uploads/2022/03/beginner_harmonica_950.jpg"/>
+            <img src="https://ledgernote.com/wp-content/uploads/2021/02/james-cotton.jpg">
+            <img src="https://ledgernote.com/wp-content/uploads/2021/02/little-walter.jpg">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjnGSNAE_4m2b3Wx54KglT79F90xgOK3vvAg&usqp=CAU"/>
+            </div>
+        </div>
+        <div class="contain-right">
+            <h2>Pitchy harmonica</h2>
+            <audio src="../audio/mond.wav" controls></audio>
+            <h2>Harmonica en Seine</h2>
+            <audio src="../audio/mond2.wav" controls></audio>
+            <h2>Ligther harmonica</h2>
+            <audio src="../audio/mond3.wav" controls></audio>
+            <h2>Harmonica blues</h2>
+            <audio src="../audio/mond4.wav" controls></audio>
+        </div>
+    </div>
+    <footer>
+        <p><strong>&#169; Copyright 2021 Muziekschool H&J</strong></p>
+        <p><strong>(Dit is een oefenopdracht, alle informatie op deze website is fictief.)</strong></p>
+    </footer>
+</body>
+</html>

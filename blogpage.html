@@ -44,6 +44,35 @@
         #tabs-1, #tabs-2, #tabs-3 {
             min-width: 95%;
         }
+        h2 {
+            text-align: center;
+            opacity: 0;
+        }
+        footer {
+            position: fixed;
+            bottom: 5px;
+            width: 100%;
+        }
+        p {
+            padding-right: 10px;
+        }
+        @media screen and (max-width: 1250px) {
+            div {
+                width: 70%;
+                margin: 0 auto;
+                border: 1px solid black;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            div {
+            width: 100%;
+            margin: 0 auto;
+            border: 1px solid black;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        }
     </style>
 </head>
 <body>
@@ -51,6 +80,11 @@
         <h1>Muziekschool H&J</h1>
         <p>Luisterend oor voor talent!</p>
     </header>
+    <a href="instrumenten/viool.html"></a>
+    <a href="instrumenten/mondharmonica.html"></a>
+    <a href="instrumenten/harp.html"></a>
+    <a href="instrumenten/saxofoon.html"></a>
+    <a href="instrumenten/gitaar.html"></a>
     <nav>
         <ul class="navbar">
             <li><a href="index.html">Home</a></li>
@@ -59,13 +93,16 @@
             <li><a href="contact.html">Contact</a></li>
             <li><a href="https://ianpjotr30.pythonanywhere.com">Agenda</a></li>
             <li><a href="#">Blog</a></li>
+            <li><a href="beheer.html">Beheer</a></li>
+            <li><a href="https://githubsucksa.github.io/mijnapp/">Motivatie</a></li>
         </ul>
     </nav>
     <section class="button">
         <button id="btn">Request articles</button>
     </section>
+    <h2>Click the headers to view more about the instrument</h2>
     <div id="tabs">
-        <ul style="margin-left: 40px;">
+        <ul id="order" style="margin-left: 40px;">
           <li><a class="link1" href="#tabs-1"></a></li>
           <li><a class="link2" href="#tabs-2"></a></li>
           <li><a class="link3" href="#tabs-3"></a></li>
